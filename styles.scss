@@ -1,0 +1,105 @@
+html {
+    box-sizing: border-box;    
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    box-sizing: border-box;
+    height: inherit;
+    width: inherit;
+
+    canvas {
+        background-color: #333333;
+    }
+}
+
+.slider-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+
+    label {
+        font-size: 14px;
+        line-height: 22px;
+    }
+  }
+
+  .dark-mode {
+    background-color: rgba(0,0,0,0.33);
+    color: #fff;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 38px;
+    margin-bottom: 6px;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+  }
+  
+  .slider-group {
+    margin-bottom: 10px;
+  }
+  
+  .slider-group label {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .slider-group input[type="range"] {
+    width: 200px;
+    vertical-align: middle;
+  }
+  
+  .slider-group span {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .slider-group span::before {
+    content: "";
+  }
+  
+  .slider-group span::after {
+    content: "";
+  }
+  
+  .slider-group span::before,
+  .slider-group span::after {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  .links-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    font-family: Arial, sans-serif;
+  }
+  
+  .links-container a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #2196f3;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .links-container a:hover {
+    background-color: #0c7bbd;
+  }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flocking Simulator</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="slider-container dark-mode">
+        <h1 class="title"><a href="http://www.red3d.com/cwr/">Flocking Simulator</a></h1>
+        <div class="slider-group">
+          <label for="max-velocity">Max Velocity:</label>
+          <input id="max-velocity" type="range" min="0" max="10" value="3">
+          <span id="max-velocity-value">3</span>
+        </div>
+      
+        <div class="slider-group">
+          <label for="max-radius">Max Radius:</label>
+          <input id="max-radius" type="range" min="0" max="300" value="75">
+          <span id="max-radius-value">75</span>
+        </div>
+      
+        <div class="slider-group">
+          <label for="alignment">Alignment:</label>
+          <input id="alignment" type="range" min="0" max="10" step="0.1" value="1.6">
+          <span id="alignment-value">1.6</span>
+        </div>
+      
+        <div class="slider-group">
+          <label for="separation">Separation:</label>
+          <input id="separation" type="range" min="0" max="10" step="0.1" value="1.3">
+          <span id="separation-value">1.3</span>
+        </div>
+      
+        <div class="slider-group">
+          <label for="cohesion">Cohesion:</label>
+          <input id="cohesion" type="range" min="0" max="10" step="0.1" value="1">
+          <span id="cohesion-value">1</span>
+        </div>
+      </div>
+
+
+      <div class="links-container">
+        <a href="https://github.com/ronald-luo/flocking-simulator" target="_blank">GitHub</a>
+        <a href="https://www.ronald-luo.com/100-websites/" target="_blank">Blog</a>
+      </div>
+</body>
+<script src="vector.js"></script>
+<script src="boid.js"></script>
+<script src="sketch.js"></script>
+</html>
